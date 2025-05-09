@@ -28,7 +28,7 @@ Latency Lens is built with a modern web stack:
 
 ### Core Modules
 
-#### 1. Test Engine (`lib/servers.ts`)
+#### 1. Test Engine
 The core testing logic handles:
 - Server endpoint definitions
 - Latency measurement algorithm
@@ -53,24 +53,6 @@ Uses React's useState and useRef hooks to manage:
 
 Latency Lens is configured for deployment on Cloudflare Pages with edge functions enabled.
 
-### Cloudflare Pages Setup
-
-This project uses Cloudflare's Next.js adapter to optimize for edge runtime:
-
-```bash
-# Install dependencies
-npm install
-
-# Build for Cloudflare Pages
-npm run pages:build
-
-# Preview locally
-npm run preview
-
-# Deploy to Cloudflare Pages
-npm run deploy
-```
-
 ### Configuration
 
 Key configuration files:
@@ -82,7 +64,7 @@ Key configuration files:
 ### Prerequisites
 
 - Node.js (version 18.18.0 or higher)
-- npm or yarn
+- npm
 
 ### Getting Started
 
@@ -114,31 +96,9 @@ latency-lens/
 └── ...
 ```
 
-## 🧠 Design Decisions
-
-### Why Test Multiple Servers?
-Different server locations help identify if latency issues are specific to certain regions or global. This provides better diagnostics for network troubleshooting.
-
-### Why Include Jitter and Packet Loss?
-Latency alone doesn't tell the full story of connection quality. Jitter (variation in latency) and packet loss provide a more comprehensive view of connection stability.
-
-### Protocol Selection
-- **HTTP** - Tests application-level latency
-- **TCP** - Measures lower-level network latency
-
-### Edge Runtime
-Using Cloudflare edge functions ensures the application itself has minimal latency, providing more accurate testing results.
-
-## 🔒 Privacy
-
-Latency Lens respects user privacy:
-- All tests are performed client-side
-- No personal data is collected or stored
-- No third-party analytics or tracking
-
 ## 🤝 Contributing
 
-This project welcomes technical contributions. Before submitting your PR, please ensure:
+This project welcomes nearly any contributions. Before submitting your PR, please ensure:
 
 - Your code follows the project's style and TypeScript standards
 - You've added tests for new functionality
