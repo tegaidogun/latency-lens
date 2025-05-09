@@ -1,8 +1,8 @@
-# Latency Lens
+# Latency Lens 
 
 Latency Lens is a modern, interactive network latency testing application that provides real-time measurements and visualizations of your connection quality to various servers around the world.
 
-![Latency Lens](https://github.com/tegaidogun/latency-lens/assets/README-header.png)
+**🔗 Live Site: [lens.tegaidogun.dev](https://lens.tegaidogun.dev)**
 
 ## 📊 Features
 
@@ -138,13 +138,20 @@ Latency Lens respects user privacy:
 
 ## 🤝 Contributing
 
-Contributions are welcome! Please feel free to submit a Pull Request.
+This project welcomes technical contributions. Before submitting your PR, please ensure:
 
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add some amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
+- Your code follows the project's style and TypeScript standards
+- You've added tests for new functionality
+- Your commits follow conventional commit format
+- The build passes with `npm run pages:build`
+
+For significant changes:
+1. Open an issue first to discuss implementation approach
+2. Document performance considerations for any testing-related changes
+3. Include UI/UX rationale for interface modifications
+4. Update the README if adding new features or changing configuration
+
+Pull requests should target the `main` branch and require passing CI checks before review.
 
 ## 📝 License
 
