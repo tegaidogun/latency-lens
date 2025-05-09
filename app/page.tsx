@@ -1,5 +1,7 @@
 "use client"
 
+export const runtime = 'edge';
+
 import { useState, useEffect, useRef } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"

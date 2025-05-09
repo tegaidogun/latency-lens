@@ -7,7 +7,10 @@
     "build": "next build",
     "postbuild": "rm -rf .next/cache",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "pages:build": "npx @cloudflare/next-on-pages",
+    "preview": "npm run pages:build && wrangler pages dev",
+    "deploy": "npm run pages:build && wrangler pages deploy"
   },
   "dependencies": {
     "@radix-ui/react-label": "^2.1.6",
@@ -30,6 +33,7 @@
     "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
+    "@cloudflare/next-on-pages": "^1.10.1",
     "@eslint/eslintrc": "^3",
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
