@@ -2,3 +2,7 @@ name = "latency-lens"
 compatibility_date = "2025-05-09"
 compatibility_flags = ["nodejs_compat"]
 pages_build_output_dir = ".vercel/output/static" 
+
+# Override any build-time vars (including Node)
+[vars]
+NODE_VERSION = "22.15.0"
