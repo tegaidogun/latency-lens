@@ -2,9 +2,9 @@
 
 Latency Lens is a modern, interactive network latency testing application that provides real-time measurements and visualizations of your connection quality to various servers around the world.
 
-**🔗 Live Site: [lens.tegaidogun.dev](https://lens.tegaidogun.dev)**
+** Live Site: [lens.tegaidogun.dev](https://lens.tegaidogun.dev)**
 
-## 📊 Features
+## Features
 
 - **Real-time latency testing** to various global endpoints
 - **Interactive metrics visualization** with dynamic graphs
@@ -14,7 +14,7 @@ Latency Lens is a modern, interactive network latency testing application that p
 - **Test history** to track your connection quality over time
 - **Mobile-responsive design** that works on all devices
 
-## 🏗️ Architecture
+## Architecture
 
 Latency Lens is built with a modern web stack:
 
@@ -49,7 +49,7 @@ Uses React's useState and useRef hooks to manage:
 - User preferences
 - History tracking
 
-## 🚀 Deployment
+## Deployment
 
 Latency Lens is configured for deployment on Cloudflare Pages with edge functions enabled.
 
@@ -59,7 +59,7 @@ Key configuration files:
 - `wrangler.toml` - Cloudflare Pages configuration
 - `next.config.mjs` - Next.js configuration with Cloudflare adapter
 
-## 💻 Development
+## Development
 
 ### Prerequisites
 
@@ -96,30 +96,8 @@ latency-lens/
 └── ...
 ```
 
-## 🤝 Contributing
-
-This project welcomes nearly any contributions. Before submitting your PR, please ensure:
-
-- Your code follows the project's style and TypeScript standards
-- You've added tests for new functionality
-- Your commits follow conventional commit format
-- The build passes with `npm run pages:build`
-
-For significant changes:
-1. Open an issue first to discuss implementation approach
-2. Document performance considerations for any testing-related changes
-3. Include UI/UX rationale for interface modifications
-4. Update the README if adding new features or changing configuration
-
 Pull requests should target the `main` branch and require passing CI checks before review.
 
 ## 📝 License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
-
-## 🙏 Acknowledgments
-
-- Cloudflare for providing the edge network
-- Next.js team for the amazing framework
-- shadcn for the beautiful UI components
-- All open-source contributors whose work made this possible 
