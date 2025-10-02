@@ -2,7 +2,7 @@
 
 Latency Lens is a modern, interactive network latency testing application that provides real-time measurements and visualizations of your connection quality to various servers around the world.
 
-** Live Site: [lens.tegaidogun.dev](https://lens.tegaidogun.dev)**
+**Live Site: [lens.tegaidogun.dev](https://lens.tegaidogun.dev)**
 
 ## Features
 
